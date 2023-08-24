@@ -1,0 +1,140 @@
+$date
+	Thu Aug 24 18:45:31 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_alu $end
+$var wire 16 ! q [15:0] $end
+$var reg 16 " a [15:0] $end
+$var reg 16 # b [15:0] $end
+$var reg 1 $ clk $end
+$var reg 1 % reset $end
+$var reg 3 & sel [2:0] $end
+$scope module uut $end
+$var wire 16 ' a [15:0] $end
+$var wire 16 ( b [15:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 3 ) sel [2:0] $end
+$var reg 16 * q [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx *
+b0 )
+b101011 (
+b10111 '
+b0 &
+0%
+0$
+b101011 #
+b10111 "
+bx !
+$end
+#10
+b1000010 !
+b1000010 *
+1$
+#20
+0$
+b1 &
+b1 )
+b100 #
+b100 (
+b101101 "
+b101101 '
+#30
+b101001 !
+b101001 *
+1$
+#40
+0$
+b10 &
+b10 )
+b111 #
+b111 (
+b100001 "
+b100001 '
+#50
+b11100111 !
+b11100111 *
+1$
+#60
+0$
+b11 &
+b11 )
+b110 #
+b110 (
+b1010110 "
+b1010110 '
+#70
+b10 !
+b10 *
+1$
+#80
+0$
+b100 &
+b100 )
+b10110 #
+b10110 (
+b101100 "
+b101100 '
+#90
+b100 !
+b100 *
+1$
+#100
+0$
+b101 &
+b101 )
+b1100 #
+b1100 (
+b100010 "
+b100010 '
+#110
+b101110 !
+b101110 *
+1$
+#120
+0$
+b110 &
+b110 )
+b1001110 #
+b1001110 (
+b1000011 "
+b1000011 '
+#130
+b1101 !
+b1101 *
+1$
+#140
+0$
+b111 &
+b111 )
+b111 #
+b111 (
+b11 "
+b11 '
+#150
+b1 !
+b1 *
+1$
+#160
+0$
+1%
+#170
+b0 !
+b0 *
+1$
+#180
+0$
+#190
+1$
+#200
+0$
