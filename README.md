@@ -133,8 +133,14 @@ So to generate a block diagram use `show top_module_name` in the terminal.
 ## RTL Synthesis of 16-bit ALU
 ##### Now its time to perform Synthesis!!!
 
-For performing synthesis we have to open yosys, to do so use the command `yosys`. Now we are inside yosys and ready to perform synthesis for our design. Before this we have to specify the library and this can be done by using the command `read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80` After this, the verilog file has to be read by the tool in order to perform synthesis, use `read_verilog file_name.v` to do so.
-Once this is done we are good to go for synthesis!!! Use `synth -top top_module_name` to perform synthesis. Now the tool will perform synthesis and generates a netlist which contains the information about the gates and flip-flops used in the design. The below image shows the netlist generated in case of 16-bit ALU.
+For performing synthesis we have to open yosys, to do so use the command `yosys`. 
+Now we are inside yosys and ready to perform synthesis for our design. 
+Before this we have to specify the library and this can be done by using the command `read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80` 
+After this, the verilog file has to be read by the tool in order to perform synthesis, use `read_verilog file_name.v` to do so.
+
+Once this is done we are good to go for synthesis!!! Use `synth -top top_module_name` to perform synthesis. Now the tool will perform synthesis and generates a netlist which contains the information about the gates and flip-flops used in the design. 
+
+The below image shows the netlist generated in case of 16-bit ALU.
 ##### Statistics 
 ![statistics](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/976a3709-4eb3-4398-86d7-e766189117de)
 
