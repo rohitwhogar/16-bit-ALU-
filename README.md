@@ -1,5 +1,10 @@
 # RTL Synthesis of 16-bit ALU using Yosys
-The 16-bit Arithmetic Logic Unit (ALU) is a fundamental digital circuit designed to perform arithmetic and logic operations on 16-bit binary numbers. It consists of various functional blocks, such as adders, logic gates, and multiplexers, integrated to execute a wide range of operations like addition, subtraction, AND, OR, XOR, and more. The design is implemented using the Verilog hardware description language and subjected to RTL simulation and synthesis using Yosys, an open-source synthesis tool.
+The 16-bit Arithmetic Logic Unit (ALU) is a fundamental digital circuit designed to perform arithmetic and logic operations on 16-bit binary numbers. It consists of various functional blocks, such as adders, logic gates, and multiplexers, integrated to execute a wide range of operations like addition, subtraction, AND, OR, XOR, and more. The design is implemented using the Verilog hardware description language and subjected to RTL simulation and synthesis using Yosys, an open-source synthesis tool. A basic block diagram of an ALU is shown below:
+
+### Baseic Block diagram of an ALU
+
+
+
 
 ## RTL Simulation of 16-bit ALU
 First we need to write the Verilog code for ALU design and then provide it with a proper stimulus. 
@@ -72,10 +77,18 @@ module ALU_16bit_TB;
 endmodule
 
 ```
-Use the respective `$dumpfile` and `$dumpvars` for dumping all the generated values in a proper file. Once the files are created we are good to go for simulation. Open the terminal in the proper directory (where both the design and testbench files are present). 
+Use the respective `$dumpfile` and `$dumpvars` for dumping all the generated values in a proper file. 
+
+## Yosys: Where Verilog Dreams Transform into Silicon Reality!
+In this project, we will be using an open-source software called Yosys for simulation and synthesis. Yosys is an open-source software framework used for Verilog RTL synthesis, formal verification, and various other digital design tasks. It is widely employed in the field of electronic design automation (EDA) to convert high-level hardware descriptions written in the Verilog hardware description language (HDL) into lower-level representations suitable for hardware implementation. Yosys offers a range of synthesis and optimization tools that help designers create efficient digital circuits.
+
+For more info visit [YosysHQ](https://github.com/YosysHQ/yosys)
+
+Once the files are created we are good to go for simulation!!!
+Open the terminal in the proper directory (where both the design and testbench files are present). So in our case the directory will be `~/synthosphere/testfiles/`
 Use the command `iverilog design_file.v testbench_file.v` to compile and simulate both the design and testbench files. Once this is done an "a.out" file is created and can be verified by typing `ls` command.
-Now, we have to run the a.out file using `./a.out` command. Once this is done, a vcd (value change dump) file which will be used to generate waveforms is created. To generate a waveform use 
-`gtkwave file_name.vcd` command in the terminal. 
+Now, we have to run the a.out file using `./a.out` command. Once this is done, a vcd (value change dump) file which will be used to generate waveforms is created. 
+To generate a waveform use `gtkwave file_name.vcd` command in the terminal. 
 
 ##### The below image shows the monitored results corresponding to the given stimulus:
 
@@ -142,4 +155,5 @@ The below images shows the waveform generated after synthesis.
 
 This shows the functionality is met and remains intact after synthesis by providing the desired results.
 
-In conclusion, the provided Verilog code for a 16-bit ALU, along with its corresponding testbench, demonstrates a functional design capable of performing arithmetic and logic operations on 16-bit operands. The code utilizes case statements to efficiently manage different operations. After synthesis using Yosys, the design undergoes logic optimization and technology mapping, resulting in a hardware representation that can be targeted to specific FPGA or ASIC technologies. By following the provided steps and guidelines, one can confidently verify that the functionality of the 16-bit ALU is successfully met post-synthesis in Yosys, confirming its correct operation in real hardware scenarios.
+## Conclusion
+Thus, the provided Verilog code for a 16-bit ALU, along with its corresponding testbench, demonstrates a functional design capable of performing arithmetic and logic operations on 16-bit operands. The code utilizes case statements to efficiently manage different operations. After synthesis using Yosys, the design undergoes logic optimization and technology mapping, resulting in a hardware representation that can be targeted to specific FPGA or ASIC technologies. By following the provided steps and guidelines, one can confidently verify that the functionality of the 16-bit ALU is successfully met post-synthesis in Yosys, confirming its correct operation in real hardware scenarios.
