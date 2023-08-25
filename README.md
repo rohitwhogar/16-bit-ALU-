@@ -153,7 +153,7 @@ Now to see the block diagram generated after synthesis use `show alu` command.
 After this the next step is to write the generated netlist to a file. To do so,
 ##### Use `write_verilog any_file_name.v` - This provides a netlist with the comments and redundancies!!
 So in order to avoid comments,
-##### Use `write_verilog -noattr any_file_name.v` - This prvides a clean netlist with no attributes!!
+##### Use `write_verilog -noattr any_file_name.v` - This provides a clean netlist with no attributes!!
 Check the `output_files` folder in this repo to see the netlist generated.
 Since the netlist files are generated, exit from yosys. Use `exit` to do so.
 
