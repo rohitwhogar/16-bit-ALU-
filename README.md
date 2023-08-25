@@ -97,7 +97,7 @@ Once this is done, its necessary to map the gates and flip-flops to their techno
  ##### Use `dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80` for Sequential circuits.
  ##### Use `abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80` for combinational circuits.
 
-Even in our case the 16-bit ALU is mapped to its respective technology library. The below images show the report of sequential and combinational ciruits being mapped to their technology libraries.
+Even in our case, the 16-bit ALU is mapped to its respective technology library. The below images show the report of sequential and combinational ciruits being mapped to their technology libraries.
 
 ##### Report of Sequential mapping:
 ![D-FFs_mapping](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/2a2ab66f-edc1-4d67-a044-d0d61435c510)
@@ -105,3 +105,32 @@ Even in our case the 16-bit ALU is mapped to its respective technology library. 
 ##### Report of Combinational mapping:
 ![modules_1](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/7bdb6974-9ebe-41dd-892a-9918de83f728)
 ![modules_2](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/a5ebfdae-e019-406c-9d71-c217227d91e4)
+
+Now to see the block diagram generated after synthesis use `show alu` command. 
+#### Note: The Block was not generated due to high instance count. The system was not compatible in terms of RAM to generate the post-synthesis block.I apologise for not being able to generate the findings.
+
+After this the next step is to write the generated netlist to a file. To do so,
+##### Use `write_verilog any_file_name.v` - This provides a netlist with the comments and redundancies!!
+So in order to avoid comments,
+##### Use `write_verilog -noattr any_file_name.v` - This prvides a clean netlist with no attributes!!
+Check the `output_files` folder in this repo to see the netlist generated.
+Since the netlist files are generated, exit from yosys. Use `exit` to do so.
+
+#### Synthesis Done!!!
+
+Now to verify the functionality of the design after synthesis, perform the following steps:
+ 
+1. To generate an "a.out file" use `iverilog netlist_file_name.v ../verilog_model/primitives.v ../verilog_model/sky130_fd_sc_hd_edited.v testbench_file_name.v` 
+
+2. To generates a vcd file use `./a.out` 
+
+3. To view the waveform use `gtkwave file_name.vcd` 
+
+After this, check the waveform and verify the results with the ones generated before synthesis. If both the waveform matches then the design is perfectly synthesised and functionality is met.
+
+The below images shows the waveform generated after synthesis. 
+
+ ##### After synthesis:
+ 
+ 
+
