@@ -77,7 +77,8 @@ Use the command `iverilog design_file.v testbench_file.v` to compile and simulat
 Now, we have to run the a.out file using `./a.out` command. Once this is done, a vcd (value change dump) file which will be used to generate waveforms is created. To generate a waveform use 
 `gtkwave file_name.vcd` command in the terminal. 
 
-The below image shows the waveform generaed after the simulation: 
+The below image shows the waveform generaed after the simulation:
+##### Pre-synthesis Waveform  
 
 ![waveform_pre_synthesis](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/da1a83fd-6da2-44fe-8bed-00d50484b8ed)
 
@@ -130,7 +131,9 @@ After this, check the waveform and verify the results with the ones generated be
 
 The below images shows the waveform generated after synthesis. 
 
- ##### After synthesis:
+ ##### Post synthesis Waveform
  
- 
+ ![waveform_post_synthesis](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/8d98b7fb-77c3-4820-bec3-2809028672e8)
 
+This shows the functionality is met and remains intact after synthesis by providing the desired results.
+So this was a short demonstration 
