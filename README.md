@@ -78,3 +78,4 @@ Now, we have to run the a.out file using `./a.out` command. Once this is done, a
 `gtkwave file_name.vcd` command in the terminal. 
 
 The below image shows the waveform generaed after the simulation: 
+![waveform_pre_synthesis](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/da1a83fd-6da2-44fe-8bed-00d50484b8ed)
