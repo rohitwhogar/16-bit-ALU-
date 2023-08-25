@@ -170,7 +170,7 @@ So in order to avoid comments,
 Check the `output_files` folder in this repo to see the netlist generated.
 Since the netlist files are generated, exit from yosys. Use `exit` to do so.
 
-#### ***Synthesis Done!!!***
+### ***Synthesis Done!!!***
 
 Now to verify the functionality of the design after synthesis, perform the following steps:
  
