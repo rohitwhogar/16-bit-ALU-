@@ -79,6 +79,7 @@ Now, we have to run the a.out file using `./a.out` command. Once this is done, a
 
 ##### The below image shows the monitored results correspong to the given stimulus:
 
+![monitored_results](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/f5690db9-6c37-4077-a15f-ad013844300a)
 
 The below image shows the waveform generaed after the simulation:
 ##### Pre-synthesis Waveform  
