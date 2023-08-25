@@ -81,7 +81,8 @@ end
 endmodule
 ```
 Once the files are created we are good to go for simulation. Open the terminal in the proper directory (where both the design and testbench files are present). 
-Use `iverilog design_file.v testbench_file.v` to compile and simulate both the design and testbench files. Once this is done an a.out  file is created and can be verified by typing `ls` command.
+Use the command `iverilog design_file.v testbench_file.v` to compile and simulate both the design and testbench files. Once this is done an a.out  file is created and can be verified by typing `ls` command.
 Now, we have to run the a.out file using `./a.out` command. Once this is done, a vcd (value change dump) file which will be used to generate waveforms is created. To generate a waveform use `gtkwave file_name.vcd` command in the terminal. 
 
-The below image shows the waveform generaed after the simulation:  
+The below image shows the waveform generaed after the simulation: 
+https://github.com/rohitwhogar/16-bit-ALU-/blob/c874427cb512412dac1721e20c6b38763d065cdb/images/waveform_pre_synthesis.png  
