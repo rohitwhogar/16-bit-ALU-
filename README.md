@@ -1,7 +1,7 @@
 # RTL Synthesis of 16-bit ALU using Yosys
 The 16-bit Arithmetic Logic Unit (ALU) is a fundamental digital circuit designed to perform arithmetic and logic operations on 16-bit binary numbers. It consists of various functional blocks, such as adders, logic gates, and multiplexers, integrated to execute a wide range of operations like addition, subtraction, AND, OR, XOR, and more. The design is implemented using the Verilog hardware description language and subjected to RTL simulation and synthesis using Yosys, an open-source synthesis tool.
 
-## RTL Simulation of ALU
+## RTL Simulation of 16-bit ALU
 First we need to write the Verilog code for ALU design and then provide it with a proper stimulus. 
 ### A sample Verilog code for 16-bit ALU 
 
@@ -91,6 +91,7 @@ So to generate a block diagram use `show top_module_name` in the terminal.
 
 ![Block_diagram_pre_synthesis](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/7ff51522-11b3-4825-a841-e308afe1b049)
 
+## RTL Synthesis of 16-bit ALU
 ##### Now its time to perform Synthesis!!!
 
 For performing synthesis we have to open yosys, to do so use the command `yosys`. Now we are inside yosys and ready to perform synthesis for our design. Before this we have to specify the library and this can be done by using the command `read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80` After this, the verilog file has to be read by the tool in order to perform synthesis, use `read_verilog file_name.v` to do so.
