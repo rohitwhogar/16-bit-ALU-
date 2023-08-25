@@ -107,9 +107,13 @@ In this project, we will be using an open-source software called Yosys for simul
 For more info visit [YosysHQ](https://github.com/YosysHQ/yosys)
 
 Now lets carry on with the implementation part. So once the files are created we are good to go for simulation!!!
-Open the terminal in the proper directory (where both the design and testbench files are present). So in our case the directory will be `~/synthosphere/testfiles/`
+
+Open the terminal in the proper directory (where both the design and testbench files are present). So in our case the directory will be `~/synthosphere/testfiles/`.
+
 Use the command `iverilog design_file.v testbench_file.v` to compile and simulate both the design and testbench files. Once this is done an "a.out" file is created and can be verified by typing `ls` command.
+
 Now, we have to run the a.out file using `./a.out` command. Once this is done, a vcd (value change dump) file which will be used to generate waveforms is created. 
+
 To generate a waveform use `gtkwave file_name.vcd` command in the terminal. 
 
 ##### The below image shows the monitored results corresponding to the given stimulus:
