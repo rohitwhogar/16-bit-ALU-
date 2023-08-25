@@ -92,3 +92,15 @@ For performing synthesis we have to open yosys, to do so use the command `yosys`
 Once this is done we are good to go for synthesis!!! Use `synth -top top_module_name` to perform synthesis. Now the tool will perform synthesis and generates a netlist which contains the information about the gates and flip-flops used in the design. The below image shows the netlist generated in case of 16-bit ALU.
 ##### Statistics 
 ![statistics](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/4a5dfe58-6436-4d4d-bfb7-8895e8aac428)
+
+Once this is done, its necessary to map the gates and flip-flops to their technology library.
+Use `dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80` for Sequential circuits.
+Use `abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80` for combinational circuits.
+
+Even in our case the 16-bit ALU is mapped to its respective technology library. The below images show the report of sequential and combinational ciruits being mapped to their technology libraries.
+
+##### Report of Sequential mapping:
+
+
+##### Report of Combinational mapping:
+
