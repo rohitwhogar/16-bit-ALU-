@@ -77,6 +77,9 @@ Use the command `iverilog design_file.v testbench_file.v` to compile and simulat
 Now, we have to run the a.out file using `./a.out` command. Once this is done, a vcd (value change dump) file which will be used to generate waveforms is created. To generate a waveform use 
 `gtkwave file_name.vcd` command in the terminal. 
 
+##### The below image shows the monitored results correspong to the given stimulus:
+
+
 The below image shows the waveform generaed after the simulation:
 ##### Pre-synthesis Waveform  
 
@@ -136,4 +139,5 @@ The below images shows the waveform generated after synthesis.
  ![waveform_post_synthesis](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/8d98b7fb-77c3-4820-bec3-2809028672e8)
 
 This shows the functionality is met and remains intact after synthesis by providing the desired results.
-So this was a short demonstration 
+
+In conclusion, the provided Verilog code for a 16-bit ALU, along with its corresponding testbench, demonstrates a functional design capable of performing arithmetic and logic operations on 16-bit operands. The code utilizes case statements to efficiently manage different operations. After synthesis using Yosys, the design undergoes logic optimization and technology mapping, resulting in a hardware representation that can be targeted to specific FPGA or ASIC technologies. By following the provided steps and guidelines, one can confidently verify that the functionality of the 16-bit ALU is successfully met post-synthesis in Yosys, confirming its correct operation in real hardware scenarios.
