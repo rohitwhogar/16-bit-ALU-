@@ -94,13 +94,14 @@ Once this is done we are good to go for synthesis!!! Use `synth -top top_module_
 ![statistics](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/4a5dfe58-6436-4d4d-bfb7-8895e8aac428)
 
 Once this is done, its necessary to map the gates and flip-flops to their technology library.
-Use `dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80` for Sequential circuits.
-Use `abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80` for combinational circuits.
+ ##### Use `dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80` for Sequential circuits.
+ ##### Use `abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80` for combinational circuits.
 
 Even in our case the 16-bit ALU is mapped to its respective technology library. The below images show the report of sequential and combinational ciruits being mapped to their technology libraries.
 
 ##### Report of Sequential mapping:
-
+![D-FFs_mapping](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/2a2ab66f-edc1-4d67-a044-d0d61435c510)
 
 ##### Report of Combinational mapping:
-
+![modules_1](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/7bdb6974-9ebe-41dd-892a-9918de83f728)
+![modules_2](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/a5ebfdae-e019-406c-9d71-c217227d91e4)
