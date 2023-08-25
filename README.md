@@ -79,3 +79,7 @@ Now, we have to run the a.out file using `./a.out` command. Once this is done, a
 
 The below image shows the waveform generaed after the simulation: 
 ![waveform_pre_synthesis](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/da1a83fd-6da2-44fe-8bed-00d50484b8ed)
+
+
+
+![Block_diagram_pre_synthesis](https://github.com/rohitwhogar/16-bit-ALU-/assets/72391479/bc887f53-b8e0-4ec8-8ee9-48ea9ba517a9)
